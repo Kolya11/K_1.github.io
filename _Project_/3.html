@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<title>Winter programming school</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="1.css">
+<body class="bak2">
+  <div class="w3-bar   w3-margin">
+  <a href="1.html" class="w3-bar-item w3-button w3-border-right w3-container w3-blue">Головна</a>
+  <a href="2.html" class="w3-bar-item w3-button w3-border-right w3-container w3-orange">Мета навчання</a>
+  
+  <a href="4.html" class="w3-bar-item w3-button w3-border-right w3-container w3-deep-orange">Колектив</a>
+  <a href="5.html" class="w3-bar-item w3-button w3-border-right w3-container w3-deep-orange">Контактніт дані</a>
+</div>
+
+
+  <div class="w3-container">
+<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-black w3-left-align w3-margin">Матеріал навчання</button>
+<div id="Demo1" class="w3-hide w3-container" style="background-color: aliceblue;">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa beatae dolores consequatur unde maxime, non earum! Maxime numquam eius possimus, laudantium blanditiis natus animi asperiores laborum expedita culpa accusamus tempore.
+    Temporibus nostrum in nisi officiis dolores. Eos nihil sunt vel voluptatem dignissimos porro error consequuntur nisi culpa, quae impedit architecto? Est quidem ab reprehenderit unde esse quibusdam sequi quo sed!
+    Nam quasi itaque inventore. Eligendi voluptatum facere itaque quisquam ad quaerat iste ullam, fuga voluptatibus laudantium quidem vero non. Perferendis enim illum exercitationem tempora nam rerum porro cupiditate fugit iusto?</p>
+</div>
+
+
+  <script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-black", "w3-red");
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-red", "w3-black");
+  }
+}
+</script>
+
+</body>
+</html> 
